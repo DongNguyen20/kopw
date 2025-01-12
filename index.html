@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .bio-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .bio-container img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .bio-container h1 {
+            margin: 10px 0;
+        }
+        .bio-container p {
+            color: #666;
+        }
+        .bio-container button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .bio-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="bio-container">
+        <img src="/img/me.jpg" alt="Profile Picture">
+        <h1>Dong Nguyen</h1>
+        <p>Web Developer</p>
+        <h6>Ho Chi Minh City</h6>
+        <button onclick="showAlert()">Hello World</button>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert('Hello! Welcome to my personal bio page.');
+        }
+    </script>
+</body>
+</html>
